@@ -1,5 +1,7 @@
 #include <iostream>
 #include<string> 
+#include <sstream>
+
 using namespace std;
 
 int wordCount(){
@@ -7,7 +9,7 @@ int wordCount(){
     getline(cin, phrase);
     stringstream ss(phrase);
     string t;
-    char del = ',';
+char del = ',';
     while (getline(ss, t, del))
         cout << "\"" << t << "\"" << " ";
     return 0;
